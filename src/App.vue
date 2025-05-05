@@ -17,7 +17,9 @@
                 >
               </li>
               <li>
-                <a href="#skills" class="hover:text-primary-500 transition-colors">Habilidades técnicas</a>
+                <a href="#skills" class="hover:text-primary-500 transition-colors"
+                  >Habilidades técnicas</a
+                >
               </li>
               <li>
                 <a href="#education" class="hover:text-primary-500 transition-colors">Educación</a>
@@ -194,7 +196,7 @@
               <h4 class="text-lg mb-1">
                 Unidad Universitaria de Secuenciacion Masiva y Bioinformatica (UUSMB)
               </h4>
-              <p class="text-sm text-slate-400 mb-4 flex items-center">
+              <p class="text-sm text-primary-200 mb-4 flex items-center">
                 <font-awesome-icon class="mr-2" icon="fas fa-calendar" />
                 2025 - Presente
               </p>
@@ -240,7 +242,7 @@
               <h4 class="text-lg mb-1">
                 Universidad de Investigación e Innovación de México (UIIX)
               </h4>
-              <p class="text-sm text-slate-400 mb-4 flex items-center">
+              <p class="text-sm text-primary-200 mb-4 flex items-center">
                 <font-awesome-icon class="mr-2" icon="fas fa-calendar" />
                 2024 AGO - 2024 DIC
               </p>
@@ -266,11 +268,11 @@
             <!-- SECCIÓN 3  -->
             <div class="bg-slate-700 rounded-lg shadow-lg p-6 relative">
               <div class="absolute -left-3 top-6 w-6 h-6 bg-primary-400 rounded-full"></div>
-              <h3 class="text-xl font-bold text-primary-400">Verano de Investigación Científica</h3>
+              <h3 class="text-xl font-bold text-primary-00">Verano de Investigación Científica</h3>
               <h4 class="text-lg mb-1">
                 Centro Nacional de Investigación y Desarrollo Tecnológico (CENIDET)
               </h4>
-              <p class="text-sm text-slate-400 mb-4 flex items-center">
+              <p class="text-sm text-primary-200 mb-4 flex items-center">
                 <font-awesome-icon class="mr-2" icon="fas fa-calendar" />
                 2024 MAYO - 2024 JULIO
               </p>
@@ -531,7 +533,7 @@
                   Tecnologico Nacional de México campus Zacatepec
                 </h4>
                 <p
-                  class="text-sm text-slate-400 mb-4 flex items-center justify-center sm:justify-start"
+                  class="text-sm text-primary-200 mb-4 flex items-center justify-center sm:justify-start"
                 >
                   <font-awesome-icon class="mr-2" icon="fas fa-calendar" /> 2020 - 2025
                 </p>
@@ -556,7 +558,7 @@
                 </h3>
                 <h4 class="text-lg mb-1 text-center sm:text-left">Oracle + Alura Laram</h4>
                 <p
-                  class="text-sm text-slate-400 mb-4 flex items-center justify-center sm:justify-start"
+                  class="text-sm text-primary-200 mb-4 flex items-center justify-center sm:justify-start"
                 >
                   <font-awesome-icon class="mr-2" icon="fas fa-calendar" /> 2024 (4 meses)
                 </p>
@@ -590,7 +592,7 @@
                   <font-awesome-icon class="mr-2 mt-1" icon="fas fa-calendar" />
                   <div>
                     <h4 class="font-semibold text-md">Conferencia: Semana académica ITZ</h4>
-                    <p class="text-md text-slate-500">Ponente, 2024</p>
+                    <p class="text-md text-primary-200">Ponente, 2024</p>
                     <p class="text-md mt-1">
                       Fui ponente en la conferencia "Creación de un Chatbot para la atención de
                       dudas de usuarios" organizado por el Instituto Tecnologico de Zacatepec, donde
@@ -603,7 +605,7 @@
                   <font-awesome-icon class="mr-2 mt-1" icon="fas fa-calendar" />
                   <div>
                     <h4 class="font-semibold text-md">Hackathon HackMorelos</h4>
-                    <p class="text-md text-slate-500">Participante, 2024</p>
+                    <p class="text-md text-primary-200">Participante, 2024</p>
                     <p class="text-md mt-1">
                       Participé en el desarrollo de un prototipo de aplicación utilizando Machine
                       Learning e Inteligencia Artificial para predecir enfermedades basadas en el
@@ -619,7 +621,7 @@
                       Verano Internacional de Investigación en Ciencia y Tecnología del TecNM
                       (VIICyT)
                     </h4>
-                    <p class="text-md text-slate-500">Participante, 2024</p>
+                    <p class="text-md text-primary-200">Participante, 2024</p>
                     <p class="text-md mt-1">
                       Colaboré en un proyecto propuesto por CENIDET para desarrollar un chatbot que
                       atendiera las dudas de los usuarios del Instituto Tecnológico de Zacatepec,
