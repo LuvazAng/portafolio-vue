@@ -1,12 +1,10 @@
 <template>
-  <div
-    class="min-h-screen flex flex-col bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200"
-  >
+  <div class="min-h-screen flex flex-col bg-slate-900 text-slate-200">
     <!-- Header Section -->
-    <header class="sticky top-0 z-50 bg-white dark:bg-bg-primary-900">
+    <header class="sticky top-0 z-50 bg-bg-primary-900">
       <div class="container mx-auto px-4 py-3">
         <div class="flex justify-between items-center">
-          <div class="text-lg text-white dark:text-white">LuvazAng</div>
+          <div class="text-lg text-white">LuvazAng</div>
           <nav class="hidden md:block">
             <ul class="flex space-x-6">
               <li><a href="#home" class="hover:text-primary-500 transition-colors">Inicio</a></li>
@@ -19,7 +17,7 @@
                 >
               </li>
               <li>
-                <a href="#skills" class="hover:text-primary-500 transition-colors">Tecnologías</a>
+                <a href="#skills" class="hover:text-primary-500 transition-colors">Habilidades técnicas</a>
               </li>
               <li>
                 <a href="#education" class="hover:text-primary-500 transition-colors">Educación</a>
@@ -28,7 +26,7 @@
             </ul>
           </nav>
           <button
-            class="md:hidden text-slate-800 dark:text-slate-200 cursor-pointer hover:text-primary-500 transition-colors"
+            class="md:hidden text-white cursor-pointer hover:text-primary-500 transition-colors"
             aria-label="Abrir menú"
             @click="toggleMenu"
           >
@@ -40,7 +38,7 @@
         </div>
       </div>
       <!-- Mobile Menu -->
-      <div v-if="menuOpen" class="md:hidden bg-white dark:bg-bg-primary-900">
+      <div v-if="menuOpen" class="md:hidden bg-bg-primary-900">
         <ul class="py-3 px-4 space-y-3">
           <li>
             <a
@@ -71,7 +69,7 @@
               href="#skills"
               @click="closeMenu"
               class="block hover:text-primary-500 transition-colors"
-              >Tecnologías</a
+              >Habilidades técnicas</a
             >
           </li>
           <li>
@@ -106,7 +104,9 @@
             <h1 class="text-4xl md:text-6xl font-bold mb-6">
               ¡Hola!, soy <span class="text-primary-400">Angel Carrillo</span>
             </h1>
-            <h2 class="text-2xl md:text-3xl font-light mb-6">Ingeniero en Sistemas Computacionales</h2>
+            <h2 class="text-2xl md:text-3xl font-light mb-6">
+              Ingeniero en Sistemas Computacionales
+            </h2>
             <h2 class="text-xl md:text-2xl font-light mb-6">Desarrollador Full Stack</h2>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
               <div
@@ -126,14 +126,14 @@
                 href="https://linkedin.com/in/luvazang"
                 target="_blank"
                 aria-label="Perfil de LinkedIn"
-                class="text-lg hover:text-primary-400 transition-colors"
+                class="text-2xl hover:text-primary-400 transition-colors"
                 ><font-awesome-icon :icon="['fab', 'linkedin-in']"
               /></a>
               <a
                 href="https://github.com/LuvazAng"
                 target="_blank"
                 aria-label="Perfil de GitHub"
-                class="text-lg hover:text-primary-400 transition-colors"
+                class="text-2xl hover:text-primary-400 transition-colors"
                 ><font-awesome-icon :icon="['fab', 'github']"
               /></a>
             </div>
@@ -147,7 +147,7 @@
           <h2 class="text-3xl font-bold text-center mb-16 relative">
             Sobre mí
             <span
-              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-600"
+              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-400"
             ></span>
           </h2>
           <div
@@ -163,15 +163,14 @@
             <div class="max-w-xl text-center md:text-left">
               <p class="text-lg">
                 ¡Hola! Bienvenido/a a mi pequeño rincón digital. Soy Luis Angel Vazquez Carrillo
-                <span class="text-primary-600 dark:text-primary-400 font-semibold"
+                <span class="text-primary-400 font-semibold"
                   >Ingeniero en Sistemas Computacionales</span
                 >
                 con especialidad en
-                <span class="text-primary-600 dark:text-primary-400 font-semibold">
-                  Desarrollo Web Empresarial</span
-                >. Con 2 años de experiencia en desarrollo de software, tengo un enfoque en la
-                creación de aplicaciones web modernas y eficientes. Me apasiona aprender nuevas
-                tecnologías y aplicarlas en proyectos nuevos
+                <span class="text-primary-400 font-semibold"> Desarrollo Web Empresarial</span>. Con
+                2 años de experiencia en desarrollo de software, tengo un enfoque en la creación de
+                aplicaciones web modernas y eficientes. Me apasiona aprender nuevas tecnologías y
+                aplicarlas en proyectos nuevos
               </p>
             </div>
           </div>
@@ -184,20 +183,18 @@
           <h2 class="text-3xl font-bold text-center mb-16 relative">
             Experiencia profesional
             <span
-              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-600"
+              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-400"
             ></span>
           </h2>
           <div class="max-w-3xl mx-auto space-y-12">
             <!-- SECCIÓN 1  -->
-            <div class="bg-white dark:bg-slate-700 rounded-lg shadow-lg p-6 relative">
+            <div class="bg-slate-700 rounded-lg shadow-lg p-6 relative">
               <div class="absolute -left-3 top-6 w-6 h-6 bg-primary-400 rounded-full"></div>
-              <h3 class="text-xl font-bold text-primary-200 dark:text-primary-400">
-                Tecnico informatico
-              </h3>
+              <h3 class="text-xl font-bold text-primary-400">Tecnico informatico</h3>
               <h4 class="text-lg mb-1">
                 Unidad Universitaria de Secuenciacion Masiva y Bioinformatica (UUSMB)
               </h4>
-              <p class="text-sm text-slate-500 dark:text-slate-400 mb-4 flex items-center">
+              <p class="text-sm text-slate-400 mb-4 flex items-center">
                 <font-awesome-icon class="mr-2" icon="fas fa-calendar" />
                 2025 - Presente
               </p>
@@ -207,45 +204,43 @@
               </p>
               <div class="flex flex-wrap gap-2 mt-3">
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >Next.js</span
                 >
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >MongoDB</span
                 >
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >FastAPI</span
                 >
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >IA</span
                 >
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >LLM</span
                 >
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >Python</span
                 >
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >ChromaDB</span
                 >
               </div>
             </div>
             <!-- SECCIÓN 2  -->
-            <div class="bg-white dark:bg-slate-700 rounded-lg shadow-lg p-6 relative">
+            <div class="bg-slate-700 rounded-lg shadow-lg p-6 relative">
               <div class="absolute -left-3 top-6 w-6 h-6 bg-primary-400 rounded-full"></div>
-              <h3 class="text-xl font-bold text-primary-200 dark:text-primary-400">
-                Desarrollador full stack
-              </h3>
+              <h3 class="text-xl font-bold text-primary-400">Desarrollador full stack</h3>
               <h4 class="text-lg mb-1">
                 Universidad de Investigación e Innovación de México (UIIX)
               </h4>
-              <p class="text-sm text-slate-500 dark:text-slate-400 mb-4 flex items-center">
+              <p class="text-sm text-slate-400 mb-4 flex items-center">
                 <font-awesome-icon class="mr-2" icon="fas fa-calendar" />
                 2024 AGO - 2024 DIC
               </p>
@@ -255,29 +250,27 @@
               </p>
               <div class="flex flex-wrap gap-2 mt-3">
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >Laravel</span
                 >
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >PHP</span
                 >
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >MySQL</span
                 >
               </div>
             </div>
             <!-- SECCIÓN 3  -->
-            <div class="bg-white dark:bg-slate-700 rounded-lg shadow-lg p-6 relative">
+            <div class="bg-slate-700 rounded-lg shadow-lg p-6 relative">
               <div class="absolute -left-3 top-6 w-6 h-6 bg-primary-400 rounded-full"></div>
-              <h3 class="text-xl font-bold text-primary-200 dark:text-primary-400">
-                Verano de Investigación Científica
-              </h3>
+              <h3 class="text-xl font-bold text-primary-400">Verano de Investigación Científica</h3>
               <h4 class="text-lg mb-1">
                 Centro Nacional de Investigación y Desarrollo Tecnológico (CENIDET)
               </h4>
-              <p class="text-sm text-slate-500 dark:text-slate-400 mb-4 flex items-center">
+              <p class="text-sm text-slate-400 mb-4 flex items-center">
                 <font-awesome-icon class="mr-2" icon="fas fa-calendar" />
                 2024 MAYO - 2024 JULIO
               </p>
@@ -287,23 +280,23 @@
               </p>
               <div class="flex flex-wrap gap-2 mt-3">
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >HTML</span
                 >
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >CSS</span
                 >
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >JavaScript</span
                 >
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >Flask (python)</span
                 >
                 <span
-                  class="px-3 py-1 bg-slate-200 text-slate-800 dark:bg-slate-600 dark:text-slate-200 text-xs rounded-full"
+                  class="px-3 py-1 font-semibold bg-slate-600 text-slate-200 text-xs rounded-full"
                   >LLM</span
                 >
               </div>
@@ -316,194 +309,196 @@
       <section id="skills" class="py-20 bg-gradient-to-b from-bg-primary-900 to-slate-900">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold text-center mb-16 relative text-white">
-            Tecnologías
+            Habilidades técnicas
             <span
-              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-600"
+              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-400"
               aria-hidden="true"
             ></span>
           </h2>
-          <div class="rounded-lg shadow-lg p-6 max-w-4xl mx-auto">
-            <ul class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 text-center">
+          <div class="rounded-lg shadow-lg p-4 sm:p-6 max-w-4xl mx-auto">
+            <ul
+              class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-3 text-center"
+            >
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <Html5Icon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="HTML5 Icon"
                 ></Html5Icon>
-                <p class="text-sm text-white">HTML5</p>
+                <p class="text-xs sm:text-sm text-white">HTML5</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <Css3Icon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="CSS3 Icon"
                 ></Css3Icon>
-                <p class="text-sm text-white">CSS3</p>
+                <p class="text-xs sm:text-sm text-white">CSS3</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <JsIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="JavaScript Icon"
                 ></JsIcon>
-                <p class="text-sm text-white">JavaScript</p>
+                <p class="text-xs sm:text-sm text-white">JavaScript</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <VuejsIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="Vue.js Icon"
                 ></VuejsIcon>
-                <p class="text-sm text-white">Vue.js</p>
+                <p class="text-xs sm:text-sm text-white">Vue.js</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <ReactIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="React Icon"
                 ></ReactIcon>
-                <p class="text-sm text-white">React</p>
+                <p class="text-xs sm:text-sm text-white">React</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <BootstrapIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="Bootstrap Icon"
                 ></BootstrapIcon>
-                <p class="text-sm text-white">Bootstrap</p>
+                <p class="text-xs sm:text-sm text-white">Bootstrap</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <TailwindCssIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="Tailwind CSS Icon"
                 ></TailwindCssIcon>
-                <p class="text-sm text-white">Tailwind CSS</p>
+                <p class="text-xs sm:text-sm text-white">Tailwind CSS</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <JavaIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="Java Icon"
                 ></JavaIcon>
-                <p class="text-sm text-white">Java</p>
+                <p class="text-xs sm:text-sm text-white">Java</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <SpringIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="Spring Boot Icon"
                 ></SpringIcon>
-                <p class="text-sm text-white">Spring Boot</p>
+                <p class="text-xs sm:text-sm text-white">Spring Boot</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <PythonIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="Python Icon"
                 ></PythonIcon>
-                <p class="text-sm text-white">Python</p>
+                <p class="text-xs sm:text-sm text-white">Python</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <DjangoIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="Django Icon"
                 ></DjangoIcon>
-                <p class="text-sm text-white">Django</p>
+                <p class="text-xs sm:text-sm text-white">Django</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <PhpIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="PHP Icon"
                 ></PhpIcon>
-                <p class="text-sm text-white">PHP</p>
+                <p class="text-xs sm:text-sm text-white">PHP</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <MongoDBIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="MongoDB Icon"
                 ></MongoDBIcon>
-                <p class="text-sm text-white">MongoDB</p>
+                <p class="text-xs sm:text-sm text-white">MongoDB</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <MysqlIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="MySQL Icon"
                 ></MysqlIcon>
-                <p class="text-sm text-white">MySQL</p>
+                <p class="text-xs sm:text-sm text-white">MySQL</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <PostgresqlIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="PostgreSQL Icon"
                 ></PostgresqlIcon>
-                <p class="text-sm text-white">PostgreSQL</p>
+                <p class="text-xs sm:text-sm text-white">PostgreSQL</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <GitIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="Git Icon"
                 ></GitIcon>
-                <p class="text-sm text-white">Git</p>
+                <p class="text-xs sm:text-sm text-white">Git</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <GithubIcon
-                  class="w-10 h-10 text-white mb-2"
+                  class="w-8 h-8 sm:w-10 sm:h-10 text-white mb-1"
                   aria-hidden="true"
                   alt="GitHub Icon"
                 ></GithubIcon>
-                <p class="text-sm text-white">GitHub</p>
+                <p class="text-xs sm:text-sm text-white">GitHub</p>
               </li>
               <li
-                class="p-4 hover:bg-slate-100 dark:hover:bg-slate-600 rounded-lg transition-colors flex flex-col items-center"
+                class="p-2 hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
               >
                 <font-awesome-icon
                   :icon="['fas', 'terminal']"
-                  class="text-white text-4xl mb-2"
+                  class="text-white text-2xl sm:text-4xl mb-1"
                   aria-hidden="true"
                   title="Command Line Interface"
                 />
-                <p class="text-sm text-white">CLI</p>
+                <p class="text-xs sm:text-sm text-white">CLI</p>
               </li>
             </ul>
           </div>
@@ -516,13 +511,11 @@
           <h2 class="text-3xl font-bold text-center mb-16 relative">
             Educación
             <span
-              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-600"
+              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-400"
             ></span>
           </h2>
           <div class="max-w-3xl mx-auto space-y-8">
-            <div
-              class="bg-white dark:bg-slate-700 rounded-lg shadow-lg p-6 flex flex-col sm:flex-row"
-            >
+            <div class="bg-slate-700 rounded-lg shadow-lg p-6 flex flex-col sm:flex-row">
               <div class="mb-4 sm:mb-0 sm:mr-6 flex justify-center">
                 <TecnmIcon
                   class="w-16 h-16 text-white"
@@ -531,16 +524,14 @@
                 ></TecnmIcon>
               </div>
               <div>
-                <h3
-                  class="text-xl font-bold text-primary-200 dark:text-primary-400 mb-1 text-center sm:text-left"
-                >
+                <h3 class="text-xl font-bold text-primary-400 mb-1 text-center sm:text-left">
                   Ingeniería en Sistemas Computacionales
                 </h3>
                 <h4 class="text-lg mb-1 text-center sm:text-left">
                   Tecnologico Nacional de México campus Zacatepec
                 </h4>
                 <p
-                  class="text-sm text-slate-500 dark:text-slate-400 mb-4 flex items-center justify-center sm:justify-start"
+                  class="text-sm text-slate-400 mb-4 flex items-center justify-center sm:justify-start"
                 >
                   <font-awesome-icon class="mr-2" icon="fas fa-calendar" /> 2020 - 2025
                 </p>
@@ -551,9 +542,7 @@
               </div>
             </div>
 
-            <div
-              class="bg-white dark:bg-slate-700 rounded-lg shadow-lg p-6 flex flex-col sm:flex-row"
-            >
+            <div class="bg-slate-700 rounded-lg shadow-lg p-6 flex flex-col sm:flex-row">
               <div class="mb-4 sm:mb-0 sm:mr-6 flex justify-center">
                 <OneIcon
                   class="w-16 h-16 text-white"
@@ -562,14 +551,12 @@
                 ></OneIcon>
               </div>
               <div>
-                <h3
-                  class="text-xl font-bold text-primary-200 dark:text-primary-400 mb-1 text-center sm:text-left"
-                >
+                <h3 class="text-xl font-bold text-primary-400 mb-1 text-center sm:text-left">
                   Programa Oracle One Education (ONE)
                 </h3>
                 <h4 class="text-lg mb-1 text-center sm:text-left">Oracle + Alura Laram</h4>
                 <p
-                  class="text-sm text-slate-500 dark:text-slate-400 mb-4 flex items-center justify-center sm:justify-start"
+                  class="text-sm text-slate-400 mb-4 flex items-center justify-center sm:justify-start"
                 >
                   <font-awesome-icon class="mr-2" icon="fas fa-calendar" /> 2024 (4 meses)
                 </p>
@@ -589,11 +576,11 @@
           <h2 class="text-3xl font-bold text-center mb-16 relative">
             Extras
             <span
-              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-600"
+              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-400"
             ></span>
           </h2>
-          <div class="flex justify-center">
-            <div class="bg-white dark:bg-slate-700 rounded-lg shadow-lg p-6 max-w-2xl w-full">
+          <div class="max-w-3xl mx-auto">
+            <div class="bg-slate-700 rounded-lg shadow-lg p-6 w-full">
               <h3 class="text-xl font-bold mb-6 flex items-center">
                 <i class="fa-solid fa-microphone-alt text-primary-400 mr-3 text-3xl"></i>
                 Eventos y participaciones
@@ -603,7 +590,7 @@
                   <font-awesome-icon class="mr-2 mt-1" icon="fas fa-calendar" />
                   <div>
                     <h4 class="font-semibold text-md">Conferencia: Semana académica ITZ</h4>
-                    <p class="text-md text-slate-500 dark:text-slate-400">Ponente, 2024</p>
+                    <p class="text-md text-slate-500">Ponente, 2024</p>
                     <p class="text-md mt-1">
                       Fui ponente en la conferencia "Creación de un Chatbot para la atención de
                       dudas de usuarios" organizado por el Instituto Tecnologico de Zacatepec, donde
@@ -616,7 +603,7 @@
                   <font-awesome-icon class="mr-2 mt-1" icon="fas fa-calendar" />
                   <div>
                     <h4 class="font-semibold text-md">Hackathon HackMorelos</h4>
-                    <p class="text-md text-slate-500 dark:text-slate-400">Participante, 2024</p>
+                    <p class="text-md text-slate-500">Participante, 2024</p>
                     <p class="text-md mt-1">
                       Participé en el desarrollo de un prototipo de aplicación utilizando Machine
                       Learning e Inteligencia Artificial para predecir enfermedades basadas en el
@@ -632,7 +619,7 @@
                       Verano Internacional de Investigación en Ciencia y Tecnología del TecNM
                       (VIICyT)
                     </h4>
-                    <p class="text-md text-slate-500 dark:text-slate-400">Participante, 2024</p>
+                    <p class="text-md text-slate-500">Participante, 2024</p>
                     <p class="text-md mt-1">
                       Colaboré en un proyecto propuesto por CENIDET para desarrollar un chatbot que
                       atendiera las dudas de los usuarios del Instituto Tecnológico de Zacatepec,
@@ -695,7 +682,7 @@
               </li>
               <li>
                 <a href="#skills" class="text-slate-300 hover:text-white transition-colors"
-                  >Tecnologías</a
+                  >Habilidades técnicas</a
                 >
               </li>
             </ul>
