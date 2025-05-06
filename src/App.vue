@@ -511,63 +511,63 @@
       <section id="education" class="py-20 bg-gradient-to-b from-slate-900 to-bg-primary-900">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold text-center mb-16 relative">
-            Educación
-            <span
-              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-400"
-            ></span>
+        Educación
+        <span
+          class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-400"
+        ></span>
           </h2>
           <div class="max-w-3xl mx-auto space-y-8">
-            <div class="bg-slate-700 rounded-lg shadow-lg p-6 flex flex-col sm:flex-row">
-              <div class="mb-4 sm:mb-0 sm:mr-6 flex justify-center">
-                <TecnmIcon
-                  class="w-16 h-16 text-white"
-                  aria-hidden="true"
-                  alt="TecNM Icon"
-                ></TecnmIcon>
-              </div>
-              <div>
-                <h3 class="text-xl font-bold text-primary-400 mb-1 text-center sm:text-left">
-                  Ingeniería en Sistemas Computacionales
-                </h3>
-                <h4 class="text-lg mb-1 text-center sm:text-left">
-                  Tecnologico Nacional de México campus Zacatepec
-                </h4>
-                <p
-                  class="text-sm text-primary-200 mb-4 flex items-center justify-center sm:justify-start"
-                >
-                  <font-awesome-icon class="mr-2" icon="fas fa-calendar" /> 2020 - 2025
-                </p>
-                <p class="text-center sm:text-left">
-                  Estudios enfocados en programación, algoritmos, estructuras de datos y desarrollo
-                  de software.
-                </p>
-              </div>
-            </div>
+        <div class="bg-slate-700 rounded-lg shadow-lg p-6 flex flex-col sm:flex-row">
+          <div class="mb-4 sm:mb-0 sm:mr-6 flex justify-center">
+            <TecnmIcon
+          class="w-16 h-16 text-white"
+          aria-hidden="true"
+          alt="TecNM Icon"
+            ></TecnmIcon>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-primary-400 mb-1 text-center sm:text-left">
+          Ingeniería en Sistemas Computacionales
+            </h3>
+            <h4 class="text-lg mb-1 text-center sm:text-left">
+          Tecnologico Nacional de México campus Zacatepec
+            </h4>
+            <p
+          class="text-sm text-primary-200 mb-4 flex items-center justify-center sm:justify-start"
+            >
+          <font-awesome-icon class="mr-2" icon="fas fa-calendar" /> 2020 - 2025
+            </p>
+            <p class="text-center sm:text-left">
+          Estudios enfocados en programación, algoritmos, estructuras de datos y desarrollo
+          de software.
+            </p>
+          </div>
+        </div>
 
-            <div class="bg-slate-700 rounded-lg shadow-lg p-6 flex flex-col sm:flex-row">
-              <div class="mb-4 sm:mb-0 sm:mr-6 flex justify-center">
-                <OneIcon
-                  class="w-16 h-16 text-white"
-                  aria-hidden="true"
-                  alt="Oracle One Icon"
-                ></OneIcon>
-              </div>
-              <div>
-                <h3 class="text-xl font-bold text-primary-400 mb-1 text-center sm:text-left">
-                  Programa Oracle One Education (ONE)
-                </h3>
-                <h4 class="text-lg mb-1 text-center sm:text-left">Oracle + Alura Laram</h4>
-                <p
-                  class="text-sm text-primary-200 mb-4 flex items-center justify-center sm:justify-start"
-                >
-                  <font-awesome-icon class="mr-2" icon="fas fa-calendar" /> 2024 (4 meses)
-                </p>
-                <p class="text-center sm:text-left">
-                  Formación intensiva en desarrollo web, incluyendo HTML, CSS3, JavaScript, Java con
-                  Programación Orientada a Objetos Formación intensiva en el desarrollo web moderno.
-                </p>
-              </div>
-            </div>
+        <div class="bg-slate-700 rounded-lg shadow-lg p-6 flex flex-col sm:flex-row">
+          <div class="mb-4 sm:mb-0 sm:mr-6 flex justify-center">
+            <OneIcon
+          class="w-16 h-16 text-white"
+          aria-hidden="true"
+          alt="Oracle One Icon"
+            ></OneIcon>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-primary-400 mb-1 text-center sm:text-left">
+          Programa Oracle One Education (ONE)
+            </h3>
+            <h4 class="text-lg mb-1 text-center sm:text-left">Oracle + Alura Laram</h4>
+            <p
+          class="text-sm text-primary-200 mb-4 flex items-center justify-center sm:justify-start"
+            >
+          <font-awesome-icon class="mr-2" icon="fas fa-calendar" /> 2024 (4 meses)
+            </p>
+            <p class="text-center sm:text-left">
+          Formación intensiva en desarrollo web, incluyendo HTML, CSS3, JavaScript, Java con
+          Programación Orientada a Objetos Formación intensiva en el desarrollo web moderno.
+            </p>
+          </div>
+        </div>
           </div>
         </div>
       </section>
@@ -576,62 +576,92 @@
       <section id="extras" class="py-20 bg-gradient-to-b from-bg-primary-900 to-slate-900">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold text-center mb-16 relative">
-            Extras
-            <span
-              class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-400"
-            ></span>
+        Extras
+        <span
+          class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-400"
+        ></span>
           </h2>
-          <div class="max-w-3xl mx-auto">
-            <div class="bg-slate-700 rounded-lg shadow-lg p-6 w-full">
-              <h3 class="text-xl font-bold mb-6 flex items-center">
-                <i class="fa-solid fa-microphone-alt text-primary-400 mr-3 text-3xl"></i>
-                Eventos y participaciones
-              </h3>
-              <ul class="space-y-4">
-                <li class="flex items-start">
-                  <font-awesome-icon class="mr-2 mt-1" icon="fas fa-calendar" />
-                  <div>
-                    <h4 class="font-semibold text-md">Conferencia: Semana académica ITZ</h4>
-                    <p class="text-md text-primary-200">Ponente, 2024</p>
-                    <p class="text-md mt-1">
-                      Fui ponente en la conferencia "Creación de un Chatbot para la atención de
-                      dudas de usuarios" organizado por el Instituto Tecnologico de Zacatepec, donde
-                      expliqué a los estudiantes del Departamento de Sistemas Computacionales el
-                      proceso de desarrollo de un chatbot.
-                    </p>
-                  </div>
-                </li>
-                <li class="flex items-start">
-                  <font-awesome-icon class="mr-2 mt-1" icon="fas fa-calendar" />
-                  <div>
-                    <h4 class="font-semibold text-md">Hackathon HackMorelos</h4>
-                    <p class="text-md text-primary-200">Participante, 2024</p>
-                    <p class="text-md mt-1">
-                      Participé en el desarrollo de un prototipo de aplicación utilizando Machine
-                      Learning e Inteligencia Artificial para predecir enfermedades basadas en el
-                      estilo de vida del usuario. El desarrollo se completó durante un evento de 48
-                      horas.
-                    </p>
-                  </div>
-                </li>
-                <li class="flex items-start">
-                  <font-awesome-icon class="mr-2 mt-1" icon="fas fa-calendar" />
-                  <div>
-                    <h4 class="font-semibold text-md">
-                      Verano Internacional de Investigación en Ciencia y Tecnología del TecNM
-                      (VIICyT)
-                    </h4>
-                    <p class="text-md text-primary-200">Participante, 2024</p>
-                    <p class="text-md mt-1">
-                      Colaboré en un proyecto propuesto por CENIDET para desarrollar un chatbot que
-                      atendiera las dudas de los usuarios del Instituto Tecnológico de Zacatepec,
-                      con el objetivo de automatizar la resolución de consultas frecuentes y mejorar
-                      la experiencia de los estudiantes.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
+          <div class="max-w-3xl mx-auto space-y-8">
+        <div class="bg-slate-700 rounded-lg shadow-lg p-6 flex flex-col sm:flex-row">
+          <div class="mb-4 sm:mb-0 sm:mr-6 flex justify-center">
+            <font-awesome-icon
+          :icon="['fas', 'microphone-alt']"
+          class="w-12 h-12 text-primary-400"
+          aria-hidden="true"
+            />
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-primary-400 mb-1 text-center sm:text-left">
+          Conferencia: Semana académica ITZ
+            </h3>
+            <h4 class="text-lg mb-1 text-center sm:text-left">Ponente</h4>
+            <p
+          class="text-sm text-primary-200 mb-4 flex items-center justify-center sm:justify-start"
+            >
+          <font-awesome-icon class="mr-2" icon="fas fa-calendar" /> 2024
+            </p>
+            <p class="text-center sm:text-left">
+          Fui ponente en la conferencia "Creación de un Chatbot para la atención de
+          dudas de usuarios" organizado por el Instituto Tecnologico de Zacatepec, donde
+          expliqué a los estudiantes del Departamento de Sistemas Computacionales el
+          proceso de desarrollo de un chatbot.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-slate-700 rounded-lg shadow-lg p-6 flex flex-col sm:flex-row">
+          <div class="mb-4 sm:mb-0 sm:mr-6 flex justify-center">
+            <font-awesome-icon
+          :icon="['fas', 'laptop-code']"
+          class="w-12 h-12 text-primary-400"
+          aria-hidden="true"
+            />
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-primary-400 mb-1 text-center sm:text-left">
+          Hackathon HackMorelos
+            </h3>
+            <h4 class="text-lg mb-1 text-center sm:text-left">Participante</h4>
+            <p
+          class="text-sm text-primary-200 mb-4 flex items-center justify-center sm:justify-start"
+            >
+          <font-awesome-icon class="mr-2" icon="fas fa-calendar" /> 2024
+            </p>
+            <p class="text-center sm:text-left">
+          Participé en el desarrollo de un prototipo de aplicación utilizando Machine
+          Learning e Inteligencia Artificial para predecir enfermedades basadas en el
+          estilo de vida del usuario. El desarrollo se completó durante un evento de 48
+          horas.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-slate-700 rounded-lg shadow-lg p-6 flex flex-col sm:flex-row">
+          <div class="mb-4 sm:mb-0 sm:mr-6 flex justify-center">
+            <font-awesome-icon
+          :icon="['fas', 'flask']"
+          class="w-12 h-12 text-primary-400"
+          aria-hidden="true"
+            />
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-primary-400 mb-1 text-center sm:text-left">
+          Verano Internacional de Investigación (VIICyT)
+            </h3>
+            <h4 class="text-lg mb-1 text-center sm:text-left">Participante - CENIDET</h4>
+            <p
+          class="text-sm text-primary-200 mb-4 flex items-center justify-center sm:justify-start"
+            >
+          <font-awesome-icon class="mr-2" icon="fas fa-calendar" /> 2024
+            </p>
+            <p class="text-center sm:text-left">
+          Colaboré en un proyecto propuesto por CENIDET para desarrollar un chatbot que
+          atendiera las dudas de los usuarios del Instituto Tecnológico de Zacatepec,
+          con el objetivo de automatizar la resolución de consultas frecuentes y mejorar
+          la experiencia de los estudiantes.
+            </p>
+          </div>
+        </div>
           </div>
         </div>
       </section>
