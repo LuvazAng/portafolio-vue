@@ -130,7 +130,7 @@
           >
             <font-awesome-icon :icon="simpleThemeIcon" class="text-md mr-2" />
             <span
-              >Tema: {{ theme === 'dark' ? 'Oscuro' : theme === 'light' ? 'Claro' : 'Claro' }}</span
+              >Tema: {{ theme === 'dark' ? 'Oscuro' : theme === 'light' ? 'Claro' : 'Sistema' }}</span
             >
           </button>
         </li>
