@@ -9,7 +9,7 @@
     aria-describedby="modal-description"
   >
     <div
-      class="bg-white dark:bg-slate-800 rounded-lg shadow-xl p-6 w-full max-h-[100vh] overflow-y-auto relative text-gray-900 dark:text-gray-200 transform transition-all sm:align-middle max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-3xl"
+      class="bg-white dark:bg-slate-800 rounded-lg shadow-xl p-6 w-full max-h-[80vh] overflow-y-auto relative text-gray-900 dark:text-gray-200 transform transition-all sm:align-middle max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-3xl"
     >
       <button
         @click="$emit('close')"
