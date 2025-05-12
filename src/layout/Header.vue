@@ -173,43 +173,32 @@
 </template>
 
 <script>
-// Importa la función setLocale desde tu archivo i18n.js
-import { setLocale } from '@/i18n' // Asegúrate de que la ruta sea correcta
-
 export default {
   name: 'AppHeader',
-  components: {}, // Si usas componentes aquí, asegúrate de listarlos
+  components: {},
   data() {
     return {
-      menuOpen: false, // Add theme state: 'light', 'dark', or 'system'
+      menuOpen: false,
       theme: 'system', // Default to system preference
     }
   },
   mounted() {
     // On page load, determine the initial theme
     this.getInitialTheme()
-
-    // Nota: El idioma inicial se carga en main.js al inicializar i18n
-    // No necesitas hacer nada aquí para cargar el idioma guardado inicialmente.
   },
   watch: {
-    // Watch for changes in the theme data property
     theme(newTheme) {
       this.applyTheme(newTheme)
     },
-    // Watch for changes in menuOpen state to add/remove click listener
     menuOpen(newValue) {
       if (newValue) {
-        // Menu is opening, add a click listener to the document
         document.addEventListener('click', this.handleClickOutside)
       } else {
-        // Menu is closing, remove the click listener from the document
         document.removeEventListener('click', this.handleClickOutside)
       }
     },
   },
   beforeUnmount() {
-    // Important: Clean up the listener when the component is destroyed
     document.removeEventListener('click', this.handleClickOutside)
   },
   methods: {
@@ -219,16 +208,11 @@ export default {
     closeMenu() {
       this.menuOpen = false
     },
-    // Method to handle clicks outside the menu and button
     handleClickOutside(event) {
-      // Get references to the menu and the button
       const menuElement = this.$refs.mobileMenu
       const buttonElement = this.$refs.menuButton
       const target = event.target
 
-      // Check if the menu is open AND the click target is NOT the button
-      // AND the menu element exists (it won't exist if menuOpen is false)
-      // AND the click target is NOT inside the menu element
       if (
         this.menuOpen &&
         buttonElement &&
@@ -239,20 +223,17 @@ export default {
         this.closeMenu()
       }
     },
-    // Method to get the theme from localStorage or system preference
     getInitialTheme() {
-      // Esta lógica es para el tema, la de i18n ya está en i18n.js y main.js
       if (localStorage.theme) {
         this.theme = localStorage.theme
       } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        this.theme = 'system' // O 'dark' si prefieres que el default del sistema sea oscuro
+        this.theme = 'system'
       } else {
-        this.theme = 'system' // O 'light' si prefieres que el default del sistema sea claro
-      } // Apply the initial theme
+        this.theme = 'system'
+      }
       this.applyTheme(this.theme)
-    }, // Method to apply the selected theme to the html element and save to localStorage
+    },
     applyTheme(theme) {
-      // Esta lógica es para el tema
       const htmlElement = document.documentElement
 
       if (theme === 'dark') {
@@ -262,18 +243,15 @@ export default {
         htmlElement.classList.remove('dark')
         localStorage.theme = 'light'
       } else {
-        // theme === 'system'
-        // Check system preference and apply accordingly
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
           htmlElement.classList.add('dark')
         } else {
           htmlElement.classList.remove('dark')
-        } // Remove theme from local storage to indicate system preference
+        }
         localStorage.removeItem('theme')
       }
-    }, // Method to toggle the theme (e.g., light -> dark -> system -> light)
+    },
     toggleTheme() {
-      // Esta lógica es para el tema
       switch (this.theme) {
         case 'light':
           this.theme = 'dark'
@@ -281,55 +259,42 @@ export default {
         case 'dark':
           this.theme = 'system'
           break
-        case 'system': // Check current system preference to decide if next is light or dark
+        case 'system':
           if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            this.theme = 'light' // System is dark, next is light
+            this.theme = 'light'
           } else {
-            this.theme = 'dark' // System is light, next is dark
+            this.theme = 'dark'
           }
           break
         default:
           this.theme = 'system'
-      } // The watch property will call applyTheme when this.theme changes
+      }
     },
 
-    // --- Lógica del Toggle de Idioma ---
     setLanguage(lang) {
-      // Llama a la función setLocale que importamos desde i18n.js
-      // Esta función cambia el locale global de vue-i18n y guarda en localStorage
-      setLocale(lang)
-      // No necesitas actualizar el estado local del componente,
-      // ya que accederemos al locale global directamente via $i18n.locale
+      // Use the i18n instance directly instead of a separate function
+      this.$i18n.locale = lang
+      // Store the language preference in localStorage
+      localStorage.setItem('locale', lang)
     },
-    // --- Fin Lógica del Toggle de Idioma ---
-  }, // Optional: Add computed property for button icon based on theme
+  },
   computed: {
-    // --- Lógica del Toggle de Tema ---
     themeIcon() {
       if (this.theme === 'dark') {
-        return ['fas', 'sun'] // Show sun when in dark mode
+        return ['fas', 'sun']
       } else if (this.theme === 'light') {
-        return ['fas', 'moon'] // Show moon when in light mode
+        return ['fas', 'moon']
       } else {
-        // For system, show something indicating system preference
-        // You might need to determine actual system mode here if you want sun/moon
         const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-        return isSystemDark ? ['fas', 'sun'] : ['fas', 'moon'] // Show opposite of system current
+        return isSystemDark ? ['fas', 'sun'] : ['fas', 'moon']
       }
-    }, // Or a simpler icon toggle (sun/moon only)
+    },
     simpleThemeIcon() {
       return this.theme === 'dark' ? ['fas', 'sun'] : ['fas', 'moon']
     },
-    // --- Fin Lógica del Toggle de Tema ---
-
-    // --- Lógica del Toggle de Idioma ---
     currentLocale() {
-      // Accede al locale actual de vue-i18n
       return this.$i18n.locale
     },
-    // --- Fin Lógica del Toggle de Idioma ---
   },
-  // Si usas Options API, puedes acceder a vue-i18n via `this.$i18n`
-  // No necesitas una opción `setup()` si todo está en `data`, `methods`, `computed`.
 }
 </script>

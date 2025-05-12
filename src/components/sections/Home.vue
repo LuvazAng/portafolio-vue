@@ -17,7 +17,7 @@
         </h2>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
           <div
-            class="py-3 px-8 bg-primary-600 justify-center text-white border-0 p-2 text-base rounded-lg inline-flex items-center hover:bg-primary-700 transition-colors"
+            class="py-3 px-8 bg-primary-700 justify-center text-white border-0 p-2 text-base rounded-lg inline-flex items-center hover:bg-primary-900 transition-colors"
           >
             <font-awesome-icon icon="fas fa-envelope" class="mr-2" /> luisvazquez1757@gmail.com
           </div>
