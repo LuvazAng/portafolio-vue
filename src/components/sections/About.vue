@@ -5,7 +5,7 @@
   >
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-16 relative">
-        Sobre mí
+        {{ $t('header.about') }}
         <span
           class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-00 dark:bg-primary-400"
           aria-hidden="true"
@@ -21,16 +21,14 @@
         </div>
         <div class="max-w-xl text-center md:text-left">
           <p class="text-lg text-black dark:text-white">
-            ¡Hola! Bienvenido/a a mi pequeño rincón digital. Soy Luis Angel Vazquez Carrillo
-            <span class="text-primary-600 dark:text-primary-400 font-semibold"
-              >Ingeniero en Sistemas Computacionales</span
-            >
-            con especialidad en
+            {{ $t('description_1_about_me') }}
+            <span class="text-primary-600 dark:text-primary-400 font-semibold">{{
+              $t('carreer')
+            }}</span>
+            {{ $t('description_2_about_me') }}
             <span class="text-primary-600 dark:text-primary-400 font-semibold">
-              Desarrollo Web Empresarial</span
-            >. Con 2 años de experiencia en desarrollo de software, tengo un enfoque en la creación
-            de aplicaciones web modernas y eficientes. Me apasiona aprender nuevas tecnologías y
-            aplicarlas en proyectos nuevos
+              {{ $t('specialty') }}</span
+            >. {{ $t('description_3_about_me') }}
           </p>
         </div>
       </div>

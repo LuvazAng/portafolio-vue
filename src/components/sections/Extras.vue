@@ -5,7 +5,7 @@
   >
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-16 relative text-black dark:text-white">
-        Extras
+        {{ $t('header.extras') }}
         <span
           class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-600 dark:bg-primary-400"
           aria-hidden="true"
@@ -37,7 +37,7 @@
               class="px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-md transition-colors text-sm flex items-center justify-center mt-5 md:mt-0 w-full md:w-auto"
               @click="showMore(item)"
             >
-              <span>Más información</span>
+              <span>{{ $t('button.information_label') }}</span>
               <font-awesome-icon :icon="['fas', 'angles-right']" class="pl-4" />
             </button>
           </div>
@@ -50,35 +50,29 @@
 <script>
 export default {
   name: 'ExtrasView',
-  data() {
-    return {
-      extraItems: [
+  computed: {
+    extraItems() {
+      return [
         {
-          title: 'Conferencia: Semana académica ITZ',
-          role: 'Ponente',
-          year: '2024',
-          description:
-            'Fui ponente en la conferencia "Creación de un Chatbot para la atención de dudas de usuarios" organizado por el Instituto Tecnologico de Zacatepec, donde expliqué a los estudiantes del Departamento de Sistemas Computacionales el proceso de desarrollo de un chatbot.',
-          icon: 'microphone-alt',
+          title: this.$t('extras.extra_1.title'),
+          role: this.$t('extras.extra_1.role'),
+          year: this.$t('extras.extra_1.date'),
+          description: this.$t('extras.extra_1.description'),
         },
         {
-          title: 'Hackathon HackMorelos',
-          role: 'Participante',
-          year: '2024',
-          description:
-            'Participé en el desarrollo de un prototipo de aplicación utilizando Machine Learning e Inteligencia Artificial para predecir enfermedades basadas en el estilo de vida del usuario. El desarrollo se completó durante un evento de 48 horas.',
-          icon: 'laptop-code',
+          title: this.$t('extras.extra_2.title'),
+          role: this.$t('extras.extra_2.role'),
+          year: this.$t('extras.extra_2.date'),
+          description: this.$t('extras.extra_2.description'),
         },
         {
-          title: 'Verano Internacional de Investigación (VIICyT)',
-          role: 'Participante - CENIDET',
-          year: '2024',
-          description:
-            'Colaboré en un proyecto propuesto por CENIDET para desarrollar un chatbot que atendiera las dudas de los usuarios del Instituto Tecnológico de Zacatepec, con el objetivo de automatizar la resolución de consultas frecuentes y mejorar la experiencia de los estudiantes.',
-          icon: 'flask',
+          title: this.$t('extras.extra_3.title'),
+          role: this.$t('extras.extra_3.role'),
+          year: this.$t('extras.extra_3.date'),
+          description: this.$t('extras.extra_3.description'),
         },
-      ],
-    }
+      ]
+    },
   },
   methods: {
     showMore(item) {

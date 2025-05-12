@@ -5,7 +5,7 @@
   >
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-16 relative text-black dark:text-white">
-        Educación
+        {{ $t('header.education') }}
         <span
           class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-600 dark:bg-primary-400"
           aria-hidden="true"
@@ -59,27 +59,25 @@ export default {
     OneIcon,
     // FontAwesomeIcon NO necesita estar aquí si está global
   },
-  data() {
-    return {
-      educations: [
+  computed: {
+    educations() {
+      return [
         {
-          title: 'Ingeniería en Sistemas Computacionales',
-          institution: 'Tecnologico Nacional de México campus Zacatepec',
-          period: '2020 - 2025',
-          description:
-            'Estudios enfocados en programación, algoritmos, estructuras de datos y desarrollo de software.',
+          title: this.$t('education.education_1.title'),
+          institution: this.$t('education.education_1.institution'),
+          period: this.$t('education.education_1.date'),
+          description: this.$t('education.education_1.description'),
           icon: 'TecnmIcon',
         },
         {
-          title: 'Programa Oracle One Education (ONE)',
-          institution: 'Oracle + Alura Laram',
-          period: '2024 (4 meses)',
-          description:
-            'Formación intensiva en desarrollo web, incluyendo HTML, CSS3, JavaScript, Java con Programación Orientada a Objetos.',
+          title: this.$t('education.education_2.title'),
+          institution: this.$t('education.education_2.institution'),
+          period: this.$t('education.education_2.date'),
+          description: this.$t('education.education_2.description'),
           icon: 'OneIcon',
         },
-      ],
-    }
+      ]
+    },
   },
   methods: {
     showMore(education) {

@@ -1,0 +1,87 @@
+{
+  "greeting": "Hey! I'm",
+  "carreer": "Computer Systems Engineer",
+  "developer": "Full Stack Developer (Web & Mobile)",
+  "specialty": "Enterprise Web Development",
+  "resumen": "Web application developer passionate about creating innovative and functional digital solutions.",
+  "description_1_about_me": "Hey! Welcome to my little digital corner. I'm Luis Angel Vazquez Carrillo.",
+  "description_2_about_me": "with a specialization in",
+  "description_3_about_me": "With 2 years of experience in software development, I focus on creating modern and efficient web applications. I'm passionate about learning new technologies and applying them to new projects.",
+  "experience": {
+    "experience_1": {
+      "title": "IT technician",
+      "company": "Unidad Universitaria de Secuenciacion Masiva y Bioinformatica (UUSMB)",
+      "date": "2025: ENE - NOW",
+      "description": "Development of a chatbot for customer service and support on the cost quoting services platform for Sequencing."
+    },
+    "experience_2": {
+      "title": "Full stack developer",
+      "company": "Universidad de Investigación e Innovación de México (UIIX)",
+      "date": "2024: AGO - 2025: DIC",
+      "description": "Development of a system for controlling income and notifications of financial debts and student reports."
+    },
+    "experience_3": {
+      "title": "Back-end development",
+      "company": "Centro Nacional de Investigación y Desarrollo Tecnológico (CENIDET)",
+      "date": "2024: MAY - 2024: JUL",
+      "description": "Development of a chatbot for the Technological Institute of Zacatepec (ITZ) for resolving doubts of the institute's students."
+    }
+  },
+  "education": {
+    "education_1": {
+      "title": "Computer Systems Engineer",
+      "institution": "Tecnologico Nacional de México campus Zacatepec",
+      "date": "2020 - 2025",
+      "description": "Studies focused on programming, algorithms, data structures, and software development."
+    },
+    "education_2": {
+      "title": "Oracle One Education Program (ONE)",
+      "institution": "Oracle + Alura Laram",
+      "date": "2024 (4 months)",
+      "description": "Intensive training in web development, including HTML, CSS3, JavaScript, Java with Object-Oriented Programming."
+    }
+  },
+  "extras": {
+    "extra_1": {
+      "title": "Conference: ITZ Academic Week",
+      "role": "Speaker",
+      "date": "2024",
+      "description": "I was a speaker at the conference \"Creating a Chatbot for User Support\" organized by the Zacatepec Technological Institute, where I explained to the students in the Computer Systems Department the process of developing a chatbot."
+    },
+    "extra_2": {
+      "title": "Hackathon HackMorelos",
+      "role": "Participant",
+      "date": "2024",
+      "description": "I participated in the development of a prototype application using Machine Learning and Artificial Intelligence to predict diseases based on the user's lifestyle. The development was completed during a 48-hour event."
+    },
+    "extra_3": {
+      "title": "International Summer Research (VIICyT)",
+      "role": "Participant",
+      "date": "2024",
+      "description": "I collaborated on a project proposed by CENIDET to develop a chatbot that would address the questions of users at the Technological Institute of Zacatepec, with the aim of automating the resolution of frequently asked questions and improving the experience of students."
+    }
+  },
+  "theme_name": {
+    "dark": "Theme: Dark",
+    "light": "Theme: Light",
+    "system": "Theme: System"
+  },
+  "button": {
+    "language_label": "Change Language",
+    "cv_label": "Resume",
+    "information_label": "More Information"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About me",
+    "experience": "Professional experience",
+    "skills": "Technical skills",
+    "education": "Education",
+    "extras": "Extras"
+  },
+  "labels": {
+    "contact": "Contact",
+    "links": "Quick Links",
+    "copyright": "LuvazAng. All rights reserved."
+  }
+}

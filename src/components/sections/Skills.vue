@@ -5,7 +5,7 @@
   >
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-16 relative text-black dark:text-white">
-        Habilidades técnicas
+        {{ $t('header.skills') }}
         <span
           class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-4 w-20 h-0.5 bg-primary-600 dark:bg-primary-400"
           aria-hidden="true"

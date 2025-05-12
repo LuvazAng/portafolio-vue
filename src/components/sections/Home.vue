@@ -6,13 +6,14 @@
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto text-center">
         <h1 class="text-4xl text-black dark:text-white md:text-6xl font-bold mb-6">
-          ¡Hola!, soy <span class="text-primary-600 dark:text-primary-400">Angel Carrillo</span>
+          {{ $t('greeting') }}
+          <span class="text-primary-600 dark:text-primary-400">Angel Carrillo</span>
         </h1>
         <h2 class="text-black dark:text-white text-2xl md:text-3xl font-light mb-6">
-          Ingeniero en Sistemas Computacionales
+          {{ $t('carreer') }}
         </h2>
         <h2 class="text-black dark:text-white text-xl md:text-2xl font-light mb-6">
-          Desarrollador Full Stack
+          {{ $t('developer') }}
         </h2>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
           <div
@@ -24,7 +25,8 @@
             href="/RESUME.pdf"
             target="_blank"
             class="py-3 px-8 bg-transparent border-2 text-black dark:text-white border-black dark:border-white font-semibold rounded-lg hover:bg-black/4 dark:hover:bg-white/10 transition-colors"
-            ><font-awesome-icon class="mr-2" icon="fas fa-file-alt" /> CV</a
+            ><font-awesome-icon class="mr-2" icon="fas fa-file-alt" />
+            {{ $t('button.cv_label') }}</a
           >
         </div>
         <div class="mt-12 flex justify-center space-x-4">
@@ -51,11 +53,5 @@
 <script>
 export default {
   name: 'HomeView',
-  // No necesitas importar FontAwesomeIcon aquí si está global en main.js
-  // No hay lógica específica de datos o métodos en esta sección por ahora
 }
 </script>
-
-<style scoped>
-/* Estilos específicos de la vista Home si los hay, además de Tailwind */
-</style>

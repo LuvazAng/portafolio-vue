@@ -1,0 +1,87 @@
+{
+  "greeting": "¡Hola!, soy",
+  "carreer": "Ingeniero en Sistemas Computacionales",
+  "developer": "Desarrollador Full Stack (Web y movil)",
+  "specialty": "Desarrollo Web Empresarial",
+  "resumen": "Desarrollador de aplicaciones web apasionado por crear soluciones digitales innovadoras y funcionales.",
+  "description_1_about_me": "¡Hola! Bienvenido/a a mi pequeño rincón digital. Soy Luis Angel Vazquez Carrillo",
+  "description_2_about_me": "con especialidad en",
+  "description_3_about_me": "Con 2 años de experiencia en desarrollo de software, tengo un enfoque en la creación de aplicaciones web modernas y eficientes. Me apasiona aprender nuevas tecnologías y aplicarlas en proyectos nuevos.",
+  "experience": {
+    "experience_1": {
+      "title": "Técnico en informática",
+      "company": "Unidad Universitaria de Secuenciacion Masiva y Bioinformatica (UUSMB)",
+      "date": "2025: ENE - PRESENTE",
+      "description": "Desarrollo de chatbot para la atención al cliente y soporte en la plataforma de cottización de costos en servicios de Secuenciacion."
+    },
+    "experience_2": {
+      "title": "Desarrollador Full Stack",
+      "company": "Universidad de Investigación e Innovación de México (UIIX)",
+      "date": "2024: ENE - 2025: ENE",
+      "description": "Desarrollo de un sistema web para la gestión de proyectos de investigación y desarrollo tecnológico."
+    },
+    "experience_3": {
+      "title": "Desarrollador back-end",
+      "company": "Universidad Autónoma de Querétaro (UAQ)",
+      "date": "2023: ENE - 2024: ENE",
+      "description": "Desarrollo de un sistema web para la gestión de proyectos de investigación y desarrollo tecnológico."
+    }
+  },
+  "education": {
+    "education_1": {
+      "title": "Ingeniería en Sistemas Computacionales",
+      "institution": "Tecnologico Nacional de México campus Zacatepec",
+      "date": "2020 - 2025",
+      "description": "Estudios enfocados en programación, algoritmos, estructuras de datos y desarrollo de software."
+    },
+    "education_2": {
+      "title": "Programa Oracle One Education (ONE)",
+      "institution": "Oracle + Alura Laram",
+      "date": "2024 (4 meses)",
+      "description": "Formación intensiva en desarrollo web, incluyendo HTML, CSS3, JavaScript, Java con Programación Orientada a Objetos."
+    }
+  },
+  "extras": {
+    "extra_1": {
+      "title": "Conferencia: Semana académica ITZ",
+      "role": "Ponente",
+      "date": "2024",
+      "description": "Fui ponente en la conferencia \"Creación de un Chatbot para la atención de dudas de usuarios\" organizado por el Instituto Tecnologico de Zacatepec, donde expliqué a los estudiantes del Departamento de Sistemas Computacionales el proceso de desarrollo de un chatbot"
+    },
+    "extra_2": {
+      "title": "Hackathon HackMorelos",
+      "role": "Participante",
+      "date": "2024",
+      "description": "Fui ponente en la conferencia \"Creación de un Chatbot para la atención de dudas de usuarios\" organizado por el Instituto Tecnologico de Zacatepec, donde expliqué a los estudiantes del Departamento de Sistemas Computacionales el proceso de desarrollo de un chatbot"
+    },
+    "extra_3": {
+      "title": "Verano Internacional de Investigación (VIICyT)",
+      "role": "Participante",
+      "date": "2024",
+      "description": "Colaboré en un proyecto propuesto por CENIDET para desarrollar un chatbot que atendiera las dudas de los usuarios del Instituto Tecnológico de Zacatepec, con el objetivo de automatizar la resolución de consultas frecuentes y mejorar la experiencia de los estudiantes."
+    }
+  },
+  "theme_name": {
+    "dark": "Tema: Ocuro",
+    "light": "Tema: Claro",
+    "system": "Tema: Sistema"
+  },
+  "button": {
+    "language_label": "Cambiar Idioma",
+    "cv_label": "CV",
+    "information_label": "Más Información"
+  },
+  "header": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia profesional",
+    "skills": "Habilidades técnicas",
+    "education": "Educación",
+    "extras": "Extras"
+  },
+  "labels": {
+    "contact": "Contacto",
+    "links": "Enlaces rápidos",
+    "copyright": "LuvazAng. Todos los derechos reservados."
+  }
+}

@@ -7,8 +7,7 @@
         <div class="md:col-span-2">
           <h2 class="text-2xl font-bold mb-4 text-black dark:text-slate-300">LUVAZANG</h2>
           <p class="mb-6 text-black dark:text-slate-300">
-            Desarrollador de aplicaciones web apasionado por crear soluciones digitales innovadoras
-            y funcionales.
+            {{ $t('resumen') }}
           </p>
           <div class="flex space-x-4">
             <a
@@ -30,40 +29,42 @@
           </div>
         </div>
         <div>
-          <h3 class="text-lg font-semibold mb-4 text-black dark:text-slate-300">Enlaces Rápidos</h3>
+          <h3 class="text-lg font-semibold mb-4 text-black dark:text-slate-300">
+            {{ $t('labels.links') }}
+          </h3>
           <ul class="space-y-2">
             <li>
               <a
                 href="#home"
                 class="text-black dark:text-slate-300 hover:text-gray-400 dark:hover:text-white transition-colors"
-                >Inicio</a
+                >{{ $t('header.home') }}</a
               >
             </li>
             <li>
               <a
                 href="#about"
                 class="text-black dark:text-slate-300 hover:text-gray-400 dark:hover:text-white transition-colors"
-                >Sobre mí</a
+                >{{ $t('header.about') }}</a
               >
             </li>
             <li>
               <a
                 href="#experience"
                 class="text-black dark:text-slate-300 hover:text-gray-400 dark:hover:text-white transition-colors"
-                >Experiencia</a
+                >{{ $t('header.experience') }}</a
               >
             </li>
             <li>
               <a
                 href="#skills"
                 class="text-black dark:text-slate-300 hover:text-gray-400 dark:hover:text-white transition-colors"
-                >Habilidades técnicas</a
+                >{{ $t('header.skills') }}</a
               >
             </li>
           </ul>
         </div>
         <div>
-          <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+          <h3 class="text-lg font-semibold mb-4">{{ $t('labels.contact') }}</h3>
           <ul class="space-y-2">
             <li class="flex items-center">
               <i class="fa-solid fa-envelope text-indigo-400 mr-3"></i>
@@ -77,7 +78,7 @@
         </div>
       </div>
       <div class="border-t border-slate-700 mt-8 pt-8 text-center text-black dark:text-slate-400">
-        <p>&copy; {{ new Date().getFullYear() }} LuvazAng. Todos los derechos reservados.</p>
+        <p>&copy; {{ new Date().getFullYear() }} {{ $t('labels.copyright') }}</p>
       </div>
     </div>
   </footer>
