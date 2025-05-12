@@ -52,7 +52,7 @@
               <button
                 @click="setLanguage('en')"
                 :class="{ 'font-bold underline': currentLocale === 'en' }"
-                class="text-black dark:text-white hover:text-primary-500 transition-colors text-sm"
+                class="text-black dark:text-white hover:text-primary-500 transition-colors text-sm cursor-pointer"
               >
                 EN
               </button>
@@ -60,7 +60,7 @@
               <button
                 @click="setLanguage('es')"
                 :class="{ 'font-bold underline': currentLocale === 'es' }"
-                class="text-black dark:text-white hover:text-primary-500 transition-colors text-sm"
+                class="text-black dark:text-white hover:text-primary-500 transition-colors text-sm cursor-pointer"
               >
                 ES
               </button>

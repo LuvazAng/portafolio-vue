@@ -43,7 +43,7 @@
               >
             </div>
             <button
-              class="px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-md transition-colors text-sm flex items-center justify-center mt-5 md:mt-0 w-full md:w-auto"
+              class="px-4 py-2 bg-primary-500 hover:bg-primary-600 cursor-pointer text-white rounded-md transition-colors text-sm flex items-center justify-center mt-5 md:mt-0 w-full md:w-auto"
               @click="showMore(job)"
             >
               <span>{{ $t('button.information_label') }}</span>
@@ -53,14 +53,30 @@
         </div>
       </div>
     </div>
+
+    <JobDetailModal :isVisible="showModal" :jobDetails="selectedJobDetails" @close="closeModal" />
   </section>
 </template>
 
 <script>
+import JobDetailModal from '@/components/JobDetailModal.vue' // Ajusta la ruta según tu estructura
+
 export default {
   name: 'ExperienceView',
+  components: {
+    JobDetailModal, // Registra el componente modal
+  },
+  // Añade datos para controlar el estado del modal
+  data() {
+    return {
+      showModal: false,
+      selectedJobDetails: null, // Guardará la información del trabajo seleccionado
+    }
+  },
   computed: {
     experiences() {
+      // **IMPORTANTE:** Aquí debes añadir la propiedad `detailedInfo`
+      // a cada objeto de experiencia con los datos extra.
       return [
         {
           title: this.$t('experience.experience_1.title'),
@@ -68,6 +84,14 @@ export default {
           period: this.$t('experience.experience_1.date'),
           description: this.$t('experience.experience_1.description'),
           skills: ['Next.js', 'MongoDB', 'FastAPI', 'IA', 'LLM', 'Python', 'ChromaDB'],
+          detailedInfo: {
+            role: this.$t('experience.experience_1.detailedInfo.detailed_role'),
+            activities: this.$t('experience.experience_1.detailedInfo.activities').split('\n'), // Suponiendo que es un string con saltos de línea
+            objectives: this.$t('experience.experience_1.detailedInfo.objectives').split('\n'),
+            industry: this.$t('experience.experience_1.detailedInfo.industry'),
+            sector: this.$t('experience.experience_1.detailedInfo.sector'),
+            // Puedes añadir más campos detallados aquí
+          },
         },
         {
           title: this.$t('experience.experience_2.title'),
@@ -75,6 +99,14 @@ export default {
           period: this.$t('experience.experience_2.date'),
           description: this.$t('experience.experience_2.description'),
           skills: ['Laravel', 'PHP', 'MySQL'],
+          detailedInfo: {
+            // <-- Añade esto para cada experiencia
+            role: this.$t('experience.experience_2.detailedInfo.detailed_role'),
+            activities: this.$t('experience.experience_2.detailedInfo.activities').split('\n'),
+            objectives: this.$t('experience.experience_2.detailedInfo.objectives').split('\n'),
+            industry: this.$t('experience.experience_2.detailedInfo.industry'),
+            sector: this.$t('experience.experience_2.detailedInfo.sector'),
+          },
         },
         {
           title: this.$t('experience.experience_3.title'),
@@ -82,13 +114,28 @@ export default {
           period: this.$t('experience.experience_3.date'),
           description: this.$t('experience.experience_3.description'),
           skills: ['HTML', 'CSS', 'JavaScript', 'Flask (python)', 'LLM'],
+          detailedInfo: {
+            // <-- Añade esto para cada experiencia
+            role: this.$t('experience.experience_3.detailedInfo.detailed_role'),
+            activities: this.$t('experience.experience_3.detailedInfo.activities').split('\n'),
+            objectives: this.$t('experience.experience_3.detailedInfo.objectives').split('\n'),
+            industry: this.$t('experience.experience_3.detailedInfo.industry'),
+            sector: this.$t('experience.experience_3.detailedInfo.sector'),
+          },
         },
       ]
     },
   },
   methods: {
     showMore(job) {
-      console.log('Mostrar más información sobre:', job.title)
+      // Cuando se hace clic, guarda la información del trabajo y abre el modal
+      this.selectedJobDetails = job
+      this.showModal = true
+    },
+    closeModal() {
+      // Método llamado por el modal para cerrarse
+      this.showModal = false
+      this.selectedJobDetails = null // Opcional: limpia los datos cuando se cierra
     },
   },
 }

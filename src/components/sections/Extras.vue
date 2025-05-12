@@ -32,15 +32,6 @@
           <p class="mb-4">
             {{ item.description }}
           </p>
-          <div class="flex flex-wrap justify-between items-start mt-3">
-            <button
-              class="px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-md transition-colors text-sm flex items-center justify-center mt-5 md:mt-0 w-full md:w-auto"
-              @click="showMore(item)"
-            >
-              <span>{{ $t('button.information_label') }}</span>
-              <font-awesome-icon :icon="['fas', 'angles-right']" class="pl-4" />
-            </button>
-          </div>
         </div>
       </div>
     </div>

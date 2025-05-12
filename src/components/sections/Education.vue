@@ -38,6 +38,16 @@
                 <font-awesome-icon class="mr-2" icon="fas fa-calendar" /> {{ education.period }}
               </p>
               <p class="mb-4">{{ education.description }}</p>
+              <a
+                v-if="education.link"
+                :href="education.link"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center text-primary-600 dark:text-primary-400 hover:underline"
+              >
+                <font-awesome-icon class="mr-1" icon="fas fa-external-link-alt" />
+                {{ $t('labels.link') }}
+              </a>
             </div>
           </div>
         </div>
@@ -75,19 +85,10 @@ export default {
           period: this.$t('education.education_2.date'),
           description: this.$t('education.education_2.description'),
           icon: 'OneIcon',
+          link: this.$t('education.education_2.link'),
         },
       ]
     },
   },
-  methods: {
-    showMore(education) {
-      // Implementar lógica para mostrar más información
-      console.log('Mostrar más información sobre:', education.title)
-    },
-  },
 }
 </script>
-
-<style scoped>
-/* Estilos específicos de la vista Educación si los hay, además de Tailwind */
-</style>

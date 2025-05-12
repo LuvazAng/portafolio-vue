@@ -7,26 +7,49 @@
   "description_1_about_me": "¡Hola! Bienvenido/a a mi pequeño rincón digital. Soy Luis Angel Vazquez Carrillo",
   "description_2_about_me": "con especialidad en",
   "description_3_about_me": "Con 2 años de experiencia en desarrollo de software, tengo un enfoque en la creación de aplicaciones web modernas y eficientes. Me apasiona aprender nuevas tecnologías y aplicarlas en proyectos nuevos.",
+
   "experience": {
     "experience_1": {
-      "title": "Técnico en informática",
+      "title": "Técnico informático",
       "company": "Unidad Universitaria de Secuenciacion Masiva y Bioinformatica (UUSMB)",
       "date": "2025: ENE - PRESENTE",
-      "description": "Desarrollo de chatbot para la atención al cliente y soporte en la plataforma de cottización de costos en servicios de Secuenciacion."
+      "description": "Desarrollo de chatbot para la atención al cliente y soporte en la plataforma de cotización de costos en servicios de Secuenciacion.",
+      "detailedInfo": {
+        "detailed_role": "Desarrollador Full Stack del chatbot.",
+        "activities": "Diseño y desarrollo del chatbot usando Next.js y FastAPI.\nImplementación de modelos de IA para procesamiento de lenguaje natural (LLM).\nIntegración con base de datos vectoriales (ChromaDB) y bases de datos NoSQL (MongoDB).\nPruebas y optimización del rendimiento del chatbot.\nConfiguración del servidor y despliegue de la aplicación.",
+        "objectives": "Automatizar las consultas de dudas y soporte de la UUSMB.\nMejorar el tiempo de resolución de dudas de los usuarios/clientes.\nReducir la carga de trabajo de los empleados de la UUSMB.",
+        "industry": "Academia / Investigación",
+        "sector": "Bioinformática y Secuenciación Masiva"
+      }
     },
     "experience_2": {
       "title": "Desarrollador Full Stack",
       "company": "Universidad de Investigación e Innovación de México (UIIX)",
-      "date": "2024: ENE - 2025: ENE",
-      "description": "Desarrollo de un sistema web para la gestión de proyectos de investigación y desarrollo tecnológico."
+      "date": "2024: AGO - 2024: DIC",
+      "description": "Desarrollo de un sistema de control de ingresos y notificaciones de adeudos economicos y reportes estudiantiles.",
+      "detailedInfo": {
+        "detailed_role": "Desarrollador Full Stack.",
+        "activities": "Diseño de la base de datos (MySQL).\nDesarrollo de APIs RESTful con Laravel (PHP).\nImplementación de la interfaz de usuario con Blade + PHP.",
+        "objectives": "Digitalizar el registro de estudiantes.\nPermitir el seguimiento en los estados financieros de cada estudiante registrado (adeudos o pagos por realizar).\nFacilitar el ingreso de los estudiantes a la institución basado reglamentos de adeudos y conductas.",
+        "industry": "Educación superior",
+        "sector": "Educativo"
+      }
     },
     "experience_3": {
       "title": "Desarrollador back-end",
-      "company": "Universidad Autónoma de Querétaro (UAQ)",
-      "date": "2023: ENE - 2024: ENE",
-      "description": "Desarrollo de un sistema web para la gestión de proyectos de investigación y desarrollo tecnológico."
+      "company": "Centro Nacional de Investigación y Desarrollo Tecnológico (CENIDET)",
+      "date": "2024: ENE - 2024: JUN",
+      "description": "Desarrollo de chatbot para el Instituto Tecnologico de Zacatepec (ITZ) para la resolución de dudas de los estudiantes del instituto.",
+      "detailedInfo": {
+        "detailed_role": "Desarrollador back-end.",
+        "activities": "Desarrollo de la lógica de negocio en Python (Flask).\nProcesar y normalizar grandes volumenes de datos para base de conocimiento.\nIntegración con modelos LLM para generación de respuesta.\nOptimización de consultas a la base de datos.",
+        "objectives": "Proveer una API para el front-end.\nGarantizar la seguridad y eficiencia en el manejo de datos.\nExplorar el uso de IA para mejorar la resolución de dudas de los usuarios sobre el instituto.",
+        "industry": "Educación superior",
+        "sector": "Desarrollo Tecnológico"
+      }
     }
   },
+
   "education": {
     "education_1": {
       "title": "Ingeniería en Sistemas Computacionales",
@@ -38,7 +61,8 @@
       "title": "Programa Oracle One Education (ONE)",
       "institution": "Oracle + Alura Laram",
       "date": "2024 (4 meses)",
-      "description": "Formación intensiva en desarrollo web, incluyendo HTML, CSS3, JavaScript, Java con Programación Orientada a Objetos."
+      "description": "Formación intensiva en desarrollo web, incluyendo HTML, CSS3, JavaScript, Java con Programación Orientada a Objetos.",
+      "link": "https://app.aluracursos.com/program/certificate/68d30cda-a93d-4dd2-9407-1cd12bebdb83"
     }
   },
   "extras": {
@@ -62,7 +86,7 @@
     }
   },
   "theme_name": {
-    "dark": "Tema: Ocuro",
+    "dark": "Tema: Oscuro",
     "light": "Tema: Claro",
     "system": "Tema: Sistema"
   },
@@ -82,6 +106,20 @@
   "labels": {
     "contact": "Contacto",
     "links": "Enlaces rápidos",
-    "copyright": "LuvazAng. Todos los derechos reservados."
+    "copyright": "LuvazAng. Todos los derechos reservados.",
+    "close": "Cerrar",
+    "link": "Ver"
+  },
+
+  "modal": {
+    "role_label": "ROL:",
+    "activities_label": "ACTIVIDADES PRINCIPALES:",
+    "objectives_label": "OBJETIVOS:",
+    "industry_label": "INDUSTRÍA:",
+    "sector_label": "SECTOR:",
+    "description_label": "DESCRIPCIÓN GENERAL:",
+    "skills_label": "TECNOLOGÍAS:",
+    "no_detailed_info": "No hay información detallada adicional disponible.",
+    "loading_info": "Cargando información..."
   }
 }

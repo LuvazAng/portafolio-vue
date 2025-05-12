@@ -12,19 +12,40 @@
       "title": "IT technician",
       "company": "Unidad Universitaria de Secuenciacion Masiva y Bioinformatica (UUSMB)",
       "date": "2025: ENE - NOW",
-      "description": "Development of a chatbot for customer service and support on the cost quoting services platform for Sequencing."
+      "description": "Development of a chatbot for customer service and support on the cost quoting services platform for Sequencing.",
+      "detailedInfo": {
+        "detailed_role": "Full Stack Chatbot Developer.",
+        "activities": "Design and development of the chatbot using Next.js and FastAPI.\nImplementation of AI models for natural language processing (LLM).\nIntegration with vector databases (ChromaDB) and NoSQL databases (MongoDB).\nTesting and optimization of chatbot performance.\nServer configuration and application deployment.",
+        "objectives": "Automate inquiry and support consultations for UUSMB.\nImprove resolution time for user/customer queries.\nReduce the workload of UUSMB employees.",
+        "industry": "Academia / Research",
+        "sector": "Bioinformatics and Massive Sequencing"
+      }
     },
     "experience_2": {
       "title": "Full stack developer",
       "company": "Universidad de Investigación e Innovación de México (UIIX)",
-      "date": "2024: AGO - 2025: DIC",
-      "description": "Development of a system for controlling income and notifications of financial debts and student reports."
+      "date": "2024: AGO - 2024: DIC",
+      "description": "Development of a system for controlling income and notifications of financial debts and student reports.",
+      "detailedInfo": {
+        "detailed_role": "Full Stack Developer.",
+        "activities": "Database design (MySQL).\nDevelopment of RESTful APIs with Laravel (PHP).\nImplementation of user interface with Blade + PHP.",
+        "objectives": "Digitize student registration.\nAllow tracking of financial status for each registered student (debts or payments to be made).\nFacilitate student admission to the institution based on debt and conduct regulations.",
+        "industry": "Higher Education",
+        "sector": "Education"
+      }
     },
     "experience_3": {
       "title": "Back-end development",
       "company": "Centro Nacional de Investigación y Desarrollo Tecnológico (CENIDET)",
       "date": "2024: MAY - 2024: JUL",
-      "description": "Development of a chatbot for the Technological Institute of Zacatepec (ITZ) for resolving doubts of the institute's students."
+      "description": "Development of a chatbot for the Technological Institute of Zacatepec (ITZ) for resolving doubts of the institute's students.",
+      "detailedInfo": {
+        "detailed_role": "Back-end developer.",
+        "activities": "Development of business logic in Python (Flask).\nProcessing and normalizing large volumes of data for knowledge base.\nIntegration with LLM models for response generation.\nOptimization of database queries.",
+        "objectives": "Provide an API for the front-end.\nEnsure security and efficiency in data handling.\nExplore the use of AI to improve the resolution of user questions about the institute.",
+        "industry": "Higher Education",
+        "sector": "Technological Development"
+      }
     }
   },
   "education": {
@@ -82,6 +103,19 @@
   "labels": {
     "contact": "Contact",
     "links": "Quick Links",
-    "copyright": "LuvazAng. All rights reserved."
+    "copyright": "LuvazAng. All rights reserved.",
+    "close": "Close",
+    "link": "Show"
+  },
+  "modal": {
+    "role_label": "ROLE:",
+    "activities_label": "MAIN ACTIVITIES:",
+    "objectives_label": "OBJETIVES:",
+    "industry_label": "INDUSTRY:",
+    "sector_label": "SECTOR:",
+    "description_label": "GENERAL DESCRIPTION:",
+    "skills_label": "Technologies:",
+    "no_detailed_info": "No additional detailed information available.",
+    "loading_info": "Loading information..."
   }
 }
