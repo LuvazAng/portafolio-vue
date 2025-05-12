@@ -77,6 +77,7 @@
           </ul>
         </nav>
         <button
+          ref="menuButton"
           class="md:hidden text-black dark:text-white cursor-pointer hover:text-primary-500 transition-colors"
           :aria-label="menuOpen ? $t('button.close_menu') : $t('button.open_menu')"
           @click="toggleMenu"
@@ -88,7 +89,7 @@
         </button>
       </div>
     </div>
-    <div v-if="menuOpen" class="md:hidden bg-white dark:bg-bg-primary-900">
+    <div v-if="menuOpen" ref="mobileMenu" class="md:hidden bg-white dark:bg-bg-primary-900">
       <ul class="py-3 px-4 space-y-3">
         <li>
           <a
@@ -196,6 +197,20 @@ export default {
     theme(newTheme) {
       this.applyTheme(newTheme)
     },
+    // Watch for changes in menuOpen state to add/remove click listener
+    menuOpen(newValue) {
+      if (newValue) {
+        // Menu is opening, add a click listener to the document
+        document.addEventListener('click', this.handleClickOutside)
+      } else {
+        // Menu is closing, remove the click listener from the document
+        document.removeEventListener('click', this.handleClickOutside)
+      }
+    },
+  },
+  beforeUnmount() {
+    // Important: Clean up the listener when the component is destroyed
+    document.removeEventListener('click', this.handleClickOutside)
   },
   methods: {
     toggleMenu() {
@@ -203,7 +218,28 @@ export default {
     },
     closeMenu() {
       this.menuOpen = false
-    }, // Method to get the theme from localStorage or system preference
+    },
+    // Method to handle clicks outside the menu and button
+    handleClickOutside(event) {
+      // Get references to the menu and the button
+      const menuElement = this.$refs.mobileMenu
+      const buttonElement = this.$refs.menuButton
+      const target = event.target
+
+      // Check if the menu is open AND the click target is NOT the button
+      // AND the menu element exists (it won't exist if menuOpen is false)
+      // AND the click target is NOT inside the menu element
+      if (
+        this.menuOpen &&
+        buttonElement &&
+        !buttonElement.contains(target) &&
+        menuElement &&
+        !menuElement.contains(target)
+      ) {
+        this.closeMenu()
+      }
+    },
+    // Method to get the theme from localStorage or system preference
     getInitialTheme() {
       // Esta lógica es para el tema, la de i18n ya está en i18n.js y main.js
       if (localStorage.theme) {
