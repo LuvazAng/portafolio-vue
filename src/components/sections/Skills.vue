@@ -16,195 +16,30 @@
           class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-3 text-center"
         >
           <li
+            v-for="(skill, idx) in skills"
+            :key="idx"
+            drag
+            :dragConstraints="constraintsRef"
+            :dragElastic="0.2"
             class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
           >
-            <Html5Icon
+            <component
+              v-if="skill.component"
+              :is="skill.component"
               class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
               aria-hidden="true"
-              alt="HTML5 Icon"
-            ></Html5Icon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">HTML5</p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <Css3Icon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="CSS3 Icon"
-            ></Css3Icon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">CSS3</p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <JsIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="JavaScript Icon"
-            ></JsIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">
-              JavaScript
-            </p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <VuejsIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="Vue.js Icon"
-            ></VuejsIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">Vue.js</p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <ReactIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="React Icon"
-            ></ReactIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">React</p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <BootstrapIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="Bootstrap Icon"
-            ></BootstrapIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">
-              Bootstrap
-            </p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <TailwindCssIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="Tailwind CSS Icon"
-            ></TailwindCssIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">
-              Tailwind CSS
-            </p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <JavaIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="Java Icon"
-            ></JavaIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">Java</p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <SpringIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="Spring Boot Icon"
-            ></SpringIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">
-              Spring Boot
-            </p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <PythonIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="Python Icon"
-            ></PythonIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">Python</p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <DjangoIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="Django Icon"
-            ></DjangoIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">Django</p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <PhpIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="PHP Icon"
-            ></PhpIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">PHP</p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <MongoDBIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="MongoDB Icon"
-            ></MongoDBIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">MongoDB</p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <MysqlIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="MySQL Icon"
-            ></MysqlIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">MySQL</p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <PostgresqlIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="PostgreSQL Icon"
-            ></PostgresqlIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">
-              PostgreSQL
-            </p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <GitIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="Git Icon"
-            ></GitIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">Git</p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
-            <GithubIcon
-              class="w-8 h-8 sm:w-10 sm:h-10 text-black dark:text-white mb-1"
-              aria-hidden="true"
-              alt="GitHub Icon"
-            ></GithubIcon>
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">GitHub</p>
-          </li>
-          <li
-            class="p-2 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-lg transition-colors flex flex-col items-center justify-center"
-          >
+              :alt="skill.alt"
+            />
             <font-awesome-icon
-              :icon="['fas', 'terminal']"
+              v-else
+              :icon="skill.icon"
               class="text-black dark:text-white text-2xl sm:text-4xl mb-1"
               aria-hidden="true"
-              title="Command Line Interface"
+              :title="skill.alt"
             />
-            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">CLI</p>
+            <p class="text-xs sm:text-sm text-black dark:text-white font-semibold pt-2">
+              {{ skill.name }}
+            </p>
           </li>
         </ul>
       </div>
@@ -212,8 +47,7 @@
   </section>
 </template>
 
-<script>
-// Importa los componentes de íconos específicos de esta vista
+<script setup>
 import Html5Icon from '@/assets/icons/html5.vue'
 import Css3Icon from '@/assets/icons/css3.vue'
 import JsIcon from '@/assets/icons/js.vue'
@@ -231,34 +65,31 @@ import MysqlIcon from '@/assets/icons/mysql.vue'
 import PostgresqlIcon from '@/assets/icons/postgresql.vue'
 import GitIcon from '@/assets/icons/git.vue'
 import GithubIcon from '@/assets/icons/github.vue'
-// FontAwesomeIcon no necesita importarse localmente si está global en main.js
 
-export default {
-  name: 'SkillsView',
-  components: {
-    // Registra los componentes de íconos que importaste
-    Html5Icon,
-    Css3Icon,
-    JsIcon,
-    VuejsIcon,
-    ReactIcon,
-    BootstrapIcon,
-    TailwindCssIcon,
-    JavaIcon,
-    SpringIcon,
-    PythonIcon,
-    DjangoIcon,
-    PhpIcon,
-    MongoDBIcon,
-    MysqlIcon,
-    PostgresqlIcon,
-    GitIcon,
-    GithubIcon,
-    // FontAwesomeIcon NO necesita estar aquí si está global
-  },
-}
+const skills = [
+  { name: 'HTML5', component: Html5Icon, alt: 'HTML5 Icon' },
+  { name: 'CSS3', component: Css3Icon, alt: 'CSS3 Icon' },
+  { name: 'JavaScript', component: JsIcon, alt: 'JavaScript Icon' },
+  { name: 'Vue.js', component: VuejsIcon, alt: 'Vue.js Icon' },
+  { name: 'React', component: ReactIcon, alt: 'React Icon' },
+  { name: 'Bootstrap', component: BootstrapIcon, alt: 'Bootstrap Icon' },
+  { name: 'Tailwind CSS', component: TailwindCssIcon, alt: 'Tailwind CSS Icon' },
+  { name: 'Java', component: JavaIcon, alt: 'Java Icon' },
+  { name: 'Spring Boot', component: SpringIcon, alt: 'Spring Boot Icon' },
+  { name: 'Python', component: PythonIcon, alt: 'Python Icon' },
+  { name: 'Django', component: DjangoIcon, alt: 'Django Icon' },
+  { name: 'PHP', component: PhpIcon, alt: 'PHP Icon' },
+  { name: 'MongoDB', component: MongoDBIcon, alt: 'MongoDB Icon' },
+  { name: 'MySQL', component: MysqlIcon, alt: 'MySQL Icon' },
+  { name: 'PostgreSQL', component: PostgresqlIcon, alt: 'PostgreSQL Icon' },
+  { name: 'Git', component: GitIcon, alt: 'Git Icon' },
+  { name: 'GitHub', component: GithubIcon, alt: 'GitHub Icon' },
+  { name: 'CLI', component: null, icon: ['fas', 'terminal'], alt: 'Command Line Interface' },
+]
 </script>
 
-<style scoped>
-/* Estilos específicos de la vista Skills si los hay, además de Tailwind */
-</style>
+<script>
+export default {
+  name: 'SkillsView',
+}
+</script>

@@ -12,7 +12,11 @@
         ></span>
       </h2>
       <div class="max-w-3xl mx-auto space-y-12">
-        <div
+        <motion.div
+          :initial="{ opacity: 0, scale: 0.5 }"
+          :while-in-view="{ opacity: 1, scale: 1 }"
+          :in-view-options="{ once: true }"
+          :transition="{ duration: 0.8, ease: [0, 0.71, 0.2, 1.01] }"
           v-for="(education, index) in educations"
           :key="index"
           class="bg-slate-200 dark:bg-slate-700 rounded-lg shadow-lg p-6 relative"
@@ -50,11 +54,15 @@
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+import { motion } from 'motion-v'
+</script>
 
 <script>
 // Importa los íconos específicos de educación

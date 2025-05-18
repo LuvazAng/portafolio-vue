@@ -39,10 +39,5 @@
 <script>
 export default {
   name: 'AboutView',
-  // No hay lógica específica de datos, métodos o componentes importados en esta sección por ahora
 }
 </script>
-
-<style scoped>
-/* Estilos específicos de la vista About si los hay, además de Tailwind */
-</style>

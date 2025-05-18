@@ -12,7 +12,11 @@
         ></span>
       </h2>
       <div class="max-w-3xl mx-auto space-y-12">
-        <div
+        <motion.div
+          :initial="{ opacity: 0, scale: 0.5 }"
+          :while-in-view="{ opacity: 1, scale: 1 }"
+          :in-view-options="{ once: true }"
+          :transition="{ duration: 0.8, ease: [0, 0.71, 0.2, 1.01] }"
           v-for="(job, index) in experiences"
           :key="index"
           class="bg-slate-200 dark:bg-slate-700 rounded-lg shadow-lg p-6 relative"
@@ -50,13 +54,17 @@
               <font-awesome-icon :icon="['fas', 'angles-right']" class="pl-4" />
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
 
     <JobDetailModal :isVisible="showModal" :jobDetails="selectedJobDetails" @close="closeModal" />
   </section>
 </template>
+
+<script setup>
+import { motion } from 'motion-v'
+</script>
 
 <script>
 import JobDetailModal from '@/components/JobDetailModal.vue' // Ajusta la ruta según tu estructura
