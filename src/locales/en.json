@@ -102,10 +102,14 @@
   },
   "labels": {
     "contact": "Contact",
+    "contact_me": "Contact me",
     "links": "Quick Links",
     "copyright": "LuvazAng. All rights reserved.",
+    "email": "Email",
+    "social_media": "Social media",
     "close": "Close",
-    "link": "Show"
+    "link": "Show",
+    "phrase_author": "The way to get started is to quit talking and start doing."
   },
   "modal": {
     "role_label": "ROLE:",

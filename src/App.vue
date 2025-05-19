@@ -11,6 +11,7 @@
       <SkillsSection />
       <EducationSection />
       <ExtrasSection />
+      <ContactSection />
     </main>
 
     <!-- Footer Section -->
@@ -26,6 +27,7 @@ import ExperienceSection from './components/sections/Experience.vue'
 import SkillsSection from './components/sections/Skills.vue'
 import EducationSection from './components/sections/Education.vue'
 import ExtrasSection from './components/sections/Extras.vue'
+import ContactSection from './components/sections/contact.vue'
 
 import AppHeader from './layout/Header.vue'
 import AppFooter from './layout/Footer.vue'
@@ -42,6 +44,7 @@ export default {
     SkillsSection,
     EducationSection,
     ExtrasSection,
+    ContactSection,
   },
 }
 </script>

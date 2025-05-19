@@ -105,10 +105,14 @@
   },
   "labels": {
     "contact": "Contacto",
+    "contact_me": "Contáctame",
     "links": "Enlaces rápidos",
     "copyright": "LuvazAng. Todos los derechos reservados.",
+    "email": "Correo electrónico",
+    "social_media": "Redes sociales",
     "close": "Cerrar",
-    "link": "Ver"
+    "link": "Ver",
+    "phrase_author": "La manera de comenzar algo, es dejar de hablar de ello y empezar a hacerlo."
   },
 
   "modal": {

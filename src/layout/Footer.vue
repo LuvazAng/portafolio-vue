@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="bg-gradient-to-b from-white to-slate-200 dark:from-bg-primary-900 dark:to-slate-900 py-12"
+    class="bg-gradient-to-b from-slate-200 to-white dark:from-slate-900 dark:to-bg-primary-900 py-12"
   >
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-4 gap-8">
