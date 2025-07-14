@@ -93,7 +93,7 @@ export default {
           period: this.$t('education.education_2.date'),
           description: this.$t('education.education_2.description'),
           icon: 'OneIcon',
-          link: this.$t('education.education_2.link'),
+          link: "https://app.aluracursos.com/program/certificate/68d30cda-a93d-4dd2-9407-1cd12bebdb83",
         },
       ]
     },

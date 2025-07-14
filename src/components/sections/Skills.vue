@@ -52,15 +52,11 @@ import Html5Icon from '@/assets/icons/html5.vue'
 import Css3Icon from '@/assets/icons/css3.vue'
 import JsIcon from '@/assets/icons/js.vue'
 import VuejsIcon from '@/assets/icons/vuejs.vue'
-import ReactIcon from '@/assets/icons/react.vue'
 import BootstrapIcon from '@/assets/icons/bootstrap.vue'
 import TailwindCssIcon from '@/assets/icons/tailwindcss.vue'
 import JavaIcon from '@/assets/icons/java.vue'
 import SpringIcon from '@/assets/icons/spring.vue'
 import PythonIcon from '@/assets/icons/python.vue'
-import DjangoIcon from '@/assets/icons/django.vue'
-import PhpIcon from '@/assets/icons/php.vue'
-import MongoDBIcon from '@/assets/icons/mongodb.vue'
 import MysqlIcon from '@/assets/icons/mysql.vue'
 import PostgresqlIcon from '@/assets/icons/postgresql.vue'
 import GitIcon from '@/assets/icons/git.vue'
@@ -71,15 +67,11 @@ const skills = [
   { name: 'CSS3', component: Css3Icon, alt: 'CSS3 Icon' },
   { name: 'JavaScript', component: JsIcon, alt: 'JavaScript Icon' },
   { name: 'Vue.js', component: VuejsIcon, alt: 'Vue.js Icon' },
-  { name: 'React', component: ReactIcon, alt: 'React Icon' },
   { name: 'Bootstrap', component: BootstrapIcon, alt: 'Bootstrap Icon' },
   { name: 'Tailwind CSS', component: TailwindCssIcon, alt: 'Tailwind CSS Icon' },
   { name: 'Java', component: JavaIcon, alt: 'Java Icon' },
-  { name: 'Spring Boot', component: SpringIcon, alt: 'Spring Boot Icon' },
   { name: 'Python', component: PythonIcon, alt: 'Python Icon' },
-  { name: 'Django', component: DjangoIcon, alt: 'Django Icon' },
-  { name: 'PHP', component: PhpIcon, alt: 'PHP Icon' },
-  { name: 'MongoDB', component: MongoDBIcon, alt: 'MongoDB Icon' },
+  { name: 'Spring Boot', component: SpringIcon, alt: 'Spring Boot Icon' },
   { name: 'MySQL', component: MysqlIcon, alt: 'MySQL Icon' },
   { name: 'PostgreSQL', component: PostgresqlIcon, alt: 'PostgreSQL Icon' },
   { name: 'Git', component: GitIcon, alt: 'Git Icon' },

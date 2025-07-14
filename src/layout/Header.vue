@@ -2,7 +2,7 @@
   <header class="sticky top-0 z-50 bg-white dark:bg-bg-primary-900">
     <div class="container mx-auto px-4 py-3">
       <div class="flex justify-between items-center">
-        <div class="text-lg text-black dark:text-white font-bold">LuvazAng</div>
+        <h1 class="text-lg text-black dark:text-white font-bold">LuvazAng</h1>
         <nav class="hidden md:block">
           <ul class="flex space-x-6 items-center">
             <li>
